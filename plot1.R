@@ -25,7 +25,7 @@ colnames(dt_time.df) <- "dt_time"
 plot1.df <- cbind(pwr.df, dt_time.df) # create plot1 data frame
 
 ## create histogram, launch graphics device and create png file
-png(filename = "plot1.png")
+png(filename = "plot1.png", width = 480, height = 480)
 
 hist(plot1.df$Global_active_power, col="red"
      ,main = "Global Active Power", 

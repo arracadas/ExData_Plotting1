@@ -25,7 +25,7 @@ colnames(dt_time.df) <- "dt_time"
 plot2.df <- cbind(pwr.df, dt_time.df) # create plot2 data frame
 
 ## create plot diagram,launch graphics device and create png file
-png(filename = "plot2.png")
+png(filename = "plot2.png", width = 480, height = 480)
 
 plot(plot2.df$dt_time, plot2.df$Global_active_power
     ,type = "l"
